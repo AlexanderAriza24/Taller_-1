@@ -16,7 +16,7 @@ namespace Datos
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = @"Insert Into Hospitalizacion (Identificacion,ValorServicio,SalarioTrabajador, ValorCopago) 
+                command.CommandText = @"Insert Into Hospitalizaciones (Identificacion,ValorServicio,SalarioTrabajador, ValorCopago) 
                                         values (@Identificacion,@ValorServicio,@SalarioTrabajador,@ValorCopago)";
                 command.Parameters.AddWithValue("@Identificacion", hospitalizacion.Identificacion);
                 command.Parameters.AddWithValue("@ValorServicio", hospitalizacion.ValorServicio);
@@ -34,13 +34,13 @@ namespace Datos
                 command.ExecuteNonQuery();
             }
         }*/
-        public List<Hospitalizacion> ConsultarTodos()
+        public List<Hospitalizacion> ConsultarTodosHospit()
         {
             SqlDataReader dataReader;
             List<Hospitalizacion> hospitalizaciones = new List<Hospitalizacion>();
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "Select * from hospitalizacion ";
+                command.CommandText = "Select * from Hospitalizaciones ";
                 dataReader = command.ExecuteReader();
                 if (dataReader.HasRows)
                 {
@@ -58,7 +58,7 @@ namespace Datos
             SqlDataReader dataReader;
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "select * from hospitalizacion where Identificacion=@Identificacion";
+                command.CommandText = "select * from Hospitalizaciones where Identificacion=@Identificacion";
                 command.Parameters.AddWithValue("@Identificacion", identificacion);
                 dataReader = command.ExecuteReader();
                 dataReader.Read();
@@ -73,6 +73,7 @@ namespace Datos
             hospitalizacion.Identificacion = (string)dataReader["Identificacion"];
             hospitalizacion.ValorServicio = (decimal)dataReader["ValorServicio"];
             hospitalizacion.SalarioTrabajador = (double)dataReader["SalarioTrabajador"];
+            hospitalizacion.ValorCopago = (decimal)dataReader["ValorCopago"];
             return hospitalizacion;
         }
         /*public int Totalizar()

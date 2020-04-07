@@ -33,7 +33,7 @@ namespace Logica
         public List<Hospitalizacion> ConsultarTodos()
         {
             _conexion.Open();
-            List<Hospitalizacion> hospitalizaciones = _repositorio.ConsultarTodos();
+            List<Hospitalizacion> hospitalizaciones = _repositorio.ConsultarTodosHospit();
             _conexion.Close();
             return hospitalizaciones;
         }
