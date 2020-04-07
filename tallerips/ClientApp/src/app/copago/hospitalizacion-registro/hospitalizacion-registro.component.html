@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de Hospitalizaciones</h2>
+            <form >
+                                
+                <div class="form-group">
+                    <label>Identificacion</label>
+                    <input type="text"  name="identificacion"  [(ngModel)]="hospitalizacion.identificacion" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Valor del Servicio</label>
+                    <input type="number"  name="valorServicio"  [(ngModel)]="hospitalizacion.valorServicio" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Salario del Trabajador</label>
+                    <input type="number"  name="salarioTrabajador"  [(ngModel)]="hospitalizacion.salarioTrabajador" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Valor del Copago</label>
+                    <input type="number"  name="valorCopago"  [(ngModel)]="hospitalizacion.valorCopago" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1"(click)="add()">Register</button>
+                    <button class="btn btn-secondary" type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

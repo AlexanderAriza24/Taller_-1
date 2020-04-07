@@ -1,0 +1,11 @@
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\obj\Debug\netstandard2.0\Datos.dll
+C:\Users\AlexAC\Documents\Ejercicios VS Code\Taller_1\Datos\obj\Debug\netstandard2.0\Datos.pdb
