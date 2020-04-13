@@ -72,7 +72,7 @@ namespace Datos
             Hospitalizacion hospitalizacion = new Hospitalizacion();
             hospitalizacion.Identificacion = (string)dataReader["Identificacion"];
             hospitalizacion.ValorServicio = (decimal)dataReader["ValorServicio"];
-            hospitalizacion.SalarioTrabajador = (double)dataReader["SalarioTrabajador"];
+            hospitalizacion.SalarioTrabajador = (decimal)dataReader["SalarioTrabajador"];
             hospitalizacion.ValorCopago = (decimal)dataReader["ValorCopago"];
             return hospitalizacion;
         }

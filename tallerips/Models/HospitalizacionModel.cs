@@ -6,7 +6,7 @@ namespace tallerips.Models
     {
         public string Identificacion { get; set; }
         public decimal ValorServicio { get; set; }
-        public double SalarioTrabajador { get; set; }
+        public decimal SalarioTrabajador { get; set; }
     }
 
     public class HospitalizacionViewModel : HospitalizacionInputModel
